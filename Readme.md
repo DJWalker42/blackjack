@@ -3,6 +3,7 @@
 ##Blackjack card game written in modern(ish) C++
 
 Provides an object orientated solution to [question 4](http://www.learncpp.com/cpp-tutorial/8-15-chapter-8-comprehensive-quiz/), chapter 8, of the C++ tutorial found at [learncpp.com](http://www.learncpp.com/).
+This borrows heavily from the code found in that tutorial written by someone called Alex.
 
 ###Issues
 1. Currently does not take into account Blackjack (ace and a picture) on the first deal.
