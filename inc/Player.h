@@ -10,8 +10,6 @@
 
 namespace game{
 
-	//class Deck;
-
 	class Player{
 	public:
 		Player() : m_hand(2), m_score(0), m_name() {}

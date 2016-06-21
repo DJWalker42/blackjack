@@ -1,7 +1,6 @@
 #ifndef GAME_DJW_H
 #define GAME_DJW_H
 
-//#include "Deck.h"
 #include "Player.h"
 
 namespace game {
@@ -12,7 +11,7 @@ namespace game {
 		Game(){}
 		virtual ~Game(){}
 	public:
-		virtual void play() = 0;
+		virtual void play() = 0; //pure virtual function must be overloaded by inheriting class
 	};
 
 	/* BlackJack definition - inherits from Game class*/
@@ -25,7 +24,7 @@ namespace game {
 		virtual void play();
 
 		//function to ask for number of players, their names, and to deal first pair of cards
-		//@param reuse true if you want to resuse the same player names. 
+		//@param reuse - set to true if you want to resuse the same player names. 
 		void setUpPlayers(bool reuse = false);
 
 	private:

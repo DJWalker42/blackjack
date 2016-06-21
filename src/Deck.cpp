@@ -10,10 +10,10 @@ namespace game {
 		m_deck(), //use loop in the constructor body to assign correct values
 		//seed the rng based on system time/clock
 		m_generator( static_cast<unsigned int>(std::chrono::high_resolution_clock::now().time_since_epoch().count()) ),
-		m_distribution(0, numCards - 1), //constructor for the distribution; rng will provide numbers in range [0,51]
+		m_distribution(0, numCards - 1), //constructor for the distribution; rng will provide integers in range [0,51]
 		m_deck_it(m_deck.begin())
 	{
-		//we only consider a standard pack of playing cards - todo change to a exception
+		//we only consider a standard pack of playing cards - todo change to a exception(?)
 		assert(Card::MAX_SUITS * Card::MAX_RANKS == numCards);
 
 		for (int suit = 0; suit < Card::MAX_SUITS; ++suit) {
