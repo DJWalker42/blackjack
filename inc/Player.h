@@ -2,13 +2,15 @@
 #define PLAYER_H
 
 #include "Card.h"
+#include "Deck.h"
+
 #include <vector>
 #include <iostream>
 #include <string>
 
 namespace game{
 
-	class Deck;
+	//class Deck;
 
 	class Player{
 	public:

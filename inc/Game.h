@@ -1,7 +1,7 @@
 #ifndef GAME_DJW_H
 #define GAME_DJW_H
 
-#include "Deck.h"
+//#include "Deck.h"
 #include "Player.h"
 
 namespace game {
